@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1203DB262345131900E0E26E /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1203DB252345131900E0E26E /* SetupViewController.swift */; };
 		1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5986723438B820035DE07 /* AppDelegate.swift */; };
 		1ED5986A23438B820035DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5986923438B820035DE07 /* ViewController.swift */; };
 		1ED5986D23438B820035DE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986B23438B820035DE07 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1203DB1F2345122700E0E26E /* PearTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PearTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		1203DB252345131900E0E26E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		1ED5986423438B820035DE07 /* PearTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PearTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5986723438B820035DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ED5986923438B820035DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1203DB272345137400E0E26E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1203DB252345131900E0E26E /* SetupViewController.swift */,
+				1ED5986923438B820035DE07 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		1ED5985B23438B820035DE07 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +109,13 @@
 		1ED5986623438B820035DE07 /* PearTime */ = {
 			isa = PBXGroup;
 			children = (
+				1203DB272345137400E0E26E /* ViewControllers */,
 				1ED5986723438B820035DE07 /* AppDelegate.swift */,
-				1ED5986923438B820035DE07 /* ViewController.swift */,
 				1ED5986B23438B820035DE07 /* Main.storyboard */,
 				1ED5986E23438B830035DE07 /* Assets.xcassets */,
 				1ED5987023438B830035DE07 /* LaunchScreen.storyboard */,
 				1ED5987323438B830035DE07 /* Info.plist */,
+				1203DB1F2345122700E0E26E /* PearTime-Bridging-Header.h */,
 			);
 			path = PearTime;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 				TargetAttributes = {
 					1ED5986323438B820035DE07 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					1ED5987723438B830035DE07 = {
 						CreatedOnToolsVersion = 10.3;
@@ -257,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED5986A23438B820035DE07 /* ViewController.swift in Sources */,
+				1203DB262345131900E0E26E /* SetupViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PearTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +456,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = magu.PearTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PearTime/PearTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PearTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = magu.PearTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PearTime/PearTime-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
