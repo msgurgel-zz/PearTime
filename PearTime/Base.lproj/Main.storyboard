@@ -54,15 +54,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-cS-tZO">
-                                <rect key="frame" x="111.5" y="117" width="97" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvC-cS-tZO">
+                                <rect key="frame" x="111.5" y="70" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XDS-wi-jwV">
-                                <rect key="frame" x="16" y="161" width="288" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XDS-wi-jwV">
+                                <rect key="frame" x="82.5" y="141" width="155" height="29"/>
                                 <segments>
                                     <segment title="Pomodoro"/>
                                     <segment title="Custom"/>
@@ -72,18 +71,23 @@
                                 <rect key="frame" x="143" y="485" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-zu-HOg">
-                                <rect key="frame" x="104" y="440" width="113" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-zu-HOg">
+                                <rect key="frame" x="148.5" y="440" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fvC-cS-tZO" firstAttribute="top" secondItem="bdI-xh-F4F" secondAttribute="top" constant="50" id="7QZ-hM-hCy"/>
                             <constraint firstItem="fvC-cS-tZO" firstAttribute="centerX" secondItem="o6b-mG-xrH" secondAttribute="centerX" id="L6D-SZ-g6e"/>
+                            <constraint firstItem="fSO-zu-HOg" firstAttribute="top" secondItem="XDS-wi-jwV" secondAttribute="bottom" constant="271" id="OQW-vY-d4n"/>
                             <constraint firstItem="bdI-xh-F4F" firstAttribute="bottom" secondItem="1JW-3b-jR7" secondAttribute="bottom" constant="53" id="R55-oA-6El"/>
+                            <constraint firstItem="XDS-wi-jwV" firstAttribute="top" secondItem="fvC-cS-tZO" secondAttribute="bottom" constant="50" id="XL8-kM-yeC"/>
                             <constraint firstItem="1JW-3b-jR7" firstAttribute="centerX" secondItem="o6b-mG-xrH" secondAttribute="centerX" id="ciM-Tg-wPg"/>
+                            <constraint firstItem="XDS-wi-jwV" firstAttribute="centerX" secondItem="o6b-mG-xrH" secondAttribute="centerX" id="gbw-6x-sDz"/>
+                            <constraint firstItem="fSO-zu-HOg" firstAttribute="centerX" secondItem="o6b-mG-xrH" secondAttribute="centerX" id="xDY-Hr-JxG"/>
+                            <constraint firstItem="1JW-3b-jR7" firstAttribute="centerX" secondItem="o6b-mG-xrH" secondAttribute="centerX" id="yYf-hz-b8p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bdI-xh-F4F"/>
                     </view>
