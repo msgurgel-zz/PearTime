@@ -14,7 +14,10 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    var currentTime = 25 * 60
+    let timerInitVal = 30 // 25 * 60 // This will be substituted by the value given from the Timer Select Screen
+    
+    var currentTime = 30 // 25 * 60
+    var barProgress = 360
     var isRunning = false
     var timer : Timer?
     
@@ -22,52 +25,63 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startOutlet: UIButton!
     
-
     @IBAction func start(_ sender: Any) {
-        // Toggle button Text between "Start" and "Pause"
         if isRunning {
-            startOutlet.setTitle("Start", for: .normal)
             pauseTimer()
+            startOutlet.setTitle("Start", for: .normal)
         }
         else {
-            startOutlet.setTitle("Pause", for: .normal)
             startTimer()
+            startOutlet.setTitle("Pause", for: .normal)
         }
-        
-      
     }
     
     @IBAction func stop(_ sender: Any) {
+        stopTimer()
+        startOutlet.setTitle("Start", for: .normal)
     }
     
-    let context = ["user": "@twostraws"]
-
     func startTimer() -> Void {
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(decreaseCounter), userInfo: nil, repeats: true)
+        isRunning = true
+        timer = Timer.scheduledTimer(
+            timeInterval: 1.0,
+            target: self,
+            selector: #selector(decreaseCounter),
+            userInfo: nil,
+            repeats: true
+        )
     }
     
     func pauseTimer() -> Void {
-       timer!.invalidate()
+        isRunning = false
+        if let t = timer {
+            t.invalidate()
+        }
     }
     
     func stopTimer() -> Void {
+        pauseTimer()
         
+        currentTime = timerInitVal
+        updateTimer(timeInSec: currentTime)
     }
     
     @objc func decreaseCounter() -> Void {
         self.currentTime -= 1
         
-        updateTimerLabel(timeInSec: currentTime)
+        updateTimer(timeInSec: currentTime)
         
-        if self.currentTime == 0 {
+        if self.currentTime <= 0 {
             stopTimer()
         }
     }
     
-    func updateTimerLabel(timeInSec t : Int) -> Void {
+    func updateTimer(timeInSec t : Int) -> Void {
         let minutes = t / 60
         let seconds = t % 60
-        timerLabel.text = String(format: "%.0f", minutes) + ":" + String(seconds)
+
+        timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
+        circularProgress.angle = Double((360 * t) / timerInitVal)
     }
 
     /*
