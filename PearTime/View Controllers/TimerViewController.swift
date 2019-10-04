@@ -10,13 +10,20 @@ import UIKit
 
 class TimerViewController: UIViewController {
     
+    var workDuration : Int?
+    var shortBreakDuration : Int?
+    var longBreakDuration : Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentTime = workDuration!
+        updateTimer(timeInSec: currentTime)
     }
+
+//    let timerInitVal = 30 // 25 * 60 // This will be substituted by the value given from the Timer Select Screen
     
-    let timerInitVal = 30 // 25 * 60 // This will be substituted by the value given from the Timer Select Screen
-    
-    var currentTime = 30 // 25 * 60
+    var currentTime = 0
     var barProgress = 360
     var isRunning = false
     var timer : Timer?
@@ -62,7 +69,7 @@ class TimerViewController: UIViewController {
     func stopTimer() -> Void {
         pauseTimer()
         
-        currentTime = timerInitVal
+        currentTime = workDuration!
         updateTimer(timeInSec: currentTime)
     }
     
@@ -81,7 +88,7 @@ class TimerViewController: UIViewController {
         let seconds = t % 60
 
         timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
-        circularProgress.angle = Double((360 * t) / timerInitVal)
+        circularProgress.angle = Double((360 * t) / workDuration!)
     }
 
     /*

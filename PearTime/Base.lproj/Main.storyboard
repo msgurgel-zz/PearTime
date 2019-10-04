@@ -77,7 +77,7 @@
                                 <rect key="frame" x="143" y="487" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="PEw-XZ-ZUy" kind="presentation" id="iK2-h0-P4W"/>
+                                    <segue destination="PEw-XZ-ZUy" kind="show" id="o23-3o-gg2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTC-3B-HZ8">

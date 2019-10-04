@@ -85,6 +85,8 @@
 		1EBBD51123452D130065A785 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F74A53A234519090026675D /* PageViewController.swift */,
+				3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */,
 				1ED5986923438B820035DE07 /* MainViewController.swift */,
 				1EBBD51223452D760065A785 /* TimerViewController.swift */,
 			);
@@ -126,11 +128,9 @@
 				1ED5986723438B820035DE07 /* AppDelegate.swift */,
 				1ED5986B23438B820035DE07 /* Main.storyboard */,
 				1EBBD51123452D130065A785 /* View Controllers */,
-				3F74A53A234519090026675D /* PageViewController.swift */,
 				1ED5986E23438B830035DE07 /* Assets.xcassets */,
 				1ED5987023438B830035DE07 /* LaunchScreen.storyboard */,
 				1ED5987323438B830035DE07 /* Info.plist */,
-				3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */,
 			);
 			path = PearTime;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */,
 				3F74A53B2345190A0026675D /* PageViewController.swift in Sources */,
 				3F74A539234513A80026675D /* TimerSelectionControllerViewController.swift in Sources */,
-				1ED5986A23438B820035DE07 /* ViewController.swift in Sources */,
+				1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

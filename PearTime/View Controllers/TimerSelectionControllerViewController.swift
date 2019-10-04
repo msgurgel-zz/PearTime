@@ -45,4 +45,13 @@ class TimerSelectionControllerViewController: UIViewController {
     @IBAction func workDuration(_ sender: UISlider) {
         workLabel.text = (String(Int(periodOutlet.value)))
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is TimerViewController
+        {
+            let tvc = segue.destination as? TimerViewController
+            tvc?.workDuration = Int(periodOutlet.value) * 60
+        }
+    }
 }
