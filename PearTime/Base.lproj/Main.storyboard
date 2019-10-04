@@ -178,17 +178,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-gu-dZo">
-                                <rect key="frame" x="123" y="88" width="74" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-gu-dZo">
+                                <rect key="frame" x="109" y="88" width="102" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWF-jf-WSK">
+                                <rect key="frame" x="92.5" y="206" width="135.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iWF-jf-WSK" firstAttribute="centerX" secondItem="LE5-B5-x4w" secondAttribute="centerX" id="2Kv-sn-UvF"/>
                             <constraint firstItem="VLG-gu-dZo" firstAttribute="top" secondItem="ITb-bg-amK" secondAttribute="top" constant="68" id="5v1-Iv-Rlm"/>
                             <constraint firstItem="VLG-gu-dZo" firstAttribute="centerX" secondItem="LE5-B5-x4w" secondAttribute="centerX" id="hSq-dZ-Boh"/>
+                            <constraint firstItem="iWF-jf-WSK" firstAttribute="top" secondItem="VLG-gu-dZo" secondAttribute="bottom" constant="82" id="o3u-Yx-Iau"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ITb-bg-amK"/>
                     </view>
