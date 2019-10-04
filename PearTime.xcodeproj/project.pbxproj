@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80024C2347C9BA005C079A /* SetupViewController.swift */; };
 		1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD51223452D760065A785 /* TimerViewController.swift */; };
 		1EBBD516234533190065A785 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD515234533190065A785 /* KDCircularProgress.swift */; };
 		1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5986723438B820035DE07 /* AppDelegate.swift */; };
 		1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5986923438B820035DE07 /* MainViewController.swift */; };
 		1ED5986D23438B820035DE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986B23438B820035DE07 /* Main.storyboard */; };
 		1ED5986F23438B830035DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986E23438B830035DE07 /* Assets.xcassets */; };
-		1ED5987223438B830035DE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5987023438B830035DE07 /* LaunchScreen.storyboard */; };
 		1ED5987D23438B830035DE07 /* PearTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5987C23438B830035DE07 /* PearTimeTests.swift */; };
 		1ED5988823438B830035DE07 /* PearTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5988723438B830035DE07 /* PearTimeUITests.swift */; };
 		3F74A539234513A80026675D /* TimerSelectionControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E80024C2347C9BA005C079A /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		1EBBD51223452D760065A785 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		1EBBD515234533190065A785 /* KDCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		1ED5986423438B820035DE07 /* PearTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PearTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +46,6 @@
 		1ED5986923438B820035DE07 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1ED5986C23438B820035DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ED5986E23438B830035DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1ED5987123438B830035DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ED5987323438B830035DE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ED5987823438B830035DE07 /* PearTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PearTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5987C23438B830035DE07 /* PearTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PearTimeTests.swift; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 		1EBBD51123452D130065A785 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E80024C2347C9BA005C079A /* SetupViewController.swift */,
 				3F74A53A234519090026675D /* PageViewController.swift */,
 				3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */,
 				1ED5986923438B820035DE07 /* MainViewController.swift */,
@@ -129,7 +130,6 @@
 				1ED5986B23438B820035DE07 /* Main.storyboard */,
 				1EBBD51123452D130065A785 /* View Controllers */,
 				1ED5986E23438B830035DE07 /* Assets.xcassets */,
-				1ED5987023438B830035DE07 /* LaunchScreen.storyboard */,
 				1ED5987323438B830035DE07 /* Info.plist */,
 			);
 			path = PearTime;
@@ -258,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED5987223438B830035DE07 /* LaunchScreen.storyboard in Resources */,
 				1ED5986F23438B830035DE07 /* Assets.xcassets in Resources */,
 				1ED5986D23438B820035DE07 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +288,7 @@
 				1EBBD516234533190065A785 /* KDCircularProgress.swift in Sources */,
 				1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */,
 				3F74A53B2345190A0026675D /* PageViewController.swift in Sources */,
+				1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */,
 				3F74A539234513A80026675D /* TimerSelectionControllerViewController.swift in Sources */,
 				1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
@@ -333,14 +333,6 @@
 				1ED5986C23438B820035DE07 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1ED5987023438B830035DE07 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ED5987123438B830035DE07 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
