@@ -12,7 +12,6 @@
 		1ED5986A23438B820035DE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5986923438B820035DE07 /* ViewController.swift */; };
 		1ED5986D23438B820035DE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986B23438B820035DE07 /* Main.storyboard */; };
 		1ED5986F23438B830035DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986E23438B830035DE07 /* Assets.xcassets */; };
-		1ED5987223438B830035DE07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5987023438B830035DE07 /* LaunchScreen.storyboard */; };
 		1ED5987D23438B830035DE07 /* PearTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5987C23438B830035DE07 /* PearTimeTests.swift */; };
 		1ED5988823438B830035DE07 /* PearTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5988723438B830035DE07 /* PearTimeUITests.swift */; };
 /* End PBXBuildFile section */
@@ -35,14 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1203DB1F2345122700E0E26E /* PearTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PearTime-Bridging-Header.h"; sourceTree = "<group>"; };
 		1203DB252345131900E0E26E /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		1ED5986423438B820035DE07 /* PearTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PearTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5986723438B820035DE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ED5986923438B820035DE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1ED5986C23438B820035DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ED5986E23438B830035DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1ED5987123438B830035DE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ED5987323438B830035DE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ED5987823438B830035DE07 /* PearTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PearTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5987C23438B830035DE07 /* PearTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PearTimeTests.swift; sourceTree = "<group>"; };
@@ -113,9 +110,7 @@
 				1ED5986723438B820035DE07 /* AppDelegate.swift */,
 				1ED5986B23438B820035DE07 /* Main.storyboard */,
 				1ED5986E23438B830035DE07 /* Assets.xcassets */,
-				1ED5987023438B830035DE07 /* LaunchScreen.storyboard */,
 				1ED5987323438B830035DE07 /* Info.plist */,
-				1203DB1F2345122700E0E26E /* PearTime-Bridging-Header.h */,
 			);
 			path = PearTime;
 			sourceTree = "<group>";
@@ -243,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED5987223438B830035DE07 /* LaunchScreen.storyboard in Resources */,
 				1ED5986F23438B830035DE07 /* Assets.xcassets in Resources */,
 				1ED5986D23438B820035DE07 /* Main.storyboard in Resources */,
 			);
@@ -316,14 +310,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1ED5987023438B830035DE07 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ED5987123438B830035DE07 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -384,7 +370,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -438,7 +427,10 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -456,7 +448,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = magu.PearTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PearTime/PearTime-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +469,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = magu.PearTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PearTime/PearTime-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
