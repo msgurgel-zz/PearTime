@@ -1,15 +1,14 @@
-//
-//  TimerViewController.swift
-//  PearTime
-//
-//  Created by Mateus Gurgel on 2019-10-02.
-//  Copyright © 2019 Mateus Gurgel. All rights reserved.
-//
+// File        : TimerViewController.swift
+// Project     : PearTime
+// Author      : Mateus Gurgel
+// Date        : October 4th, 2019
+// Description : Handles the logic of the Timer page
 
 import UIKit
 
 class TimerViewController: UIViewController {
-    
+   
+    // Values passed from the previous screen
     var workDuration : Int?
     var shortBreakDuration : Int?
     var longBreakDuration : Int?
@@ -17,14 +16,12 @@ class TimerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        breakLabel.text=""
         currentTime = workDuration!
         updateTimer(timeInSec: currentTime)
-        changeColour()
+        
+        breakLabel.text = ""
     }
-    
-    //    let timerInitVal = 30 // 25 * 60 // This will be substituted by the value given from the Timer Select Screen
-    
+
     var currentTime = 0
     var isRunning = false
     var isBreak = false
@@ -34,6 +31,8 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var breakLabel: UILabel!
     @IBOutlet weak var startOutlet: UIButton!
+
+    
     
     @IBAction func start(_ sender: Any) {
         if isRunning {
@@ -47,12 +46,14 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: Any) {
-        stopTimer()
-        currentTime = workDuration!
+        stopTimer(workDuration!)
         isBreak = false
         
+        matchProgressColourToTimer()
         startOutlet.setTitle("Start", for: .normal)
     }
+    
+    
     
     func startTimer() -> Void {
         isRunning = true
@@ -76,38 +77,40 @@ class TimerViewController: UIViewController {
         }
     }
     
-    func stopTimer() -> Void {
+    func stopTimer(_ newTime : Int = 0) -> Void {
         pauseTimer()
         
-        currentTime = 0
+        currentTime = newTime
+
         updateTimer(timeInSec: currentTime)
-        updateBreakLabel()
     }
     
     @objc func decreaseCounter() -> Void {
         self.currentTime -= 1
         
-        updateTimer(timeInSec: currentTime)
-        
         if self.currentTime <= 0 {
             stopTimer()
             if isBreak {
-                isBreak = false
-                stopTimer()
                 currentTime = workDuration!
                 updateTimer(timeInSec: currentTime)
+                startOutlet.setTitle("Start", for: .normal)
+                
+                isBreak = false
             } else {
-                isBreak = true
                 currentTime = shortBreakDuration!
                 updateTimer(timeInSec: currentTime)
                 startTimer()
+                
+                isBreak = true
             }
-            changeColour()
+            matchProgressColourToTimer()
             updateBreakLabel()
         }
+        
+        updateTimer(timeInSec: currentTime)
     }
     
-    func changeColour()
+    func matchProgressColourToTimer()
     {
         if isBreak
         {
@@ -118,7 +121,9 @@ class TimerViewController: UIViewController {
             circularProgress.set(colors: UIColor.cyan)
         }
     }
-    
+   
+    // Hides or shows the Break label depending on if it's
+    // break time or not.
     func updateBreakLabel()
     {
         if isBreak
@@ -127,7 +132,7 @@ class TimerViewController: UIViewController {
         }
         else
         {
-            breakLabel.text=""
+            breakLabel.text = ""
         }
     }
     
@@ -135,18 +140,14 @@ class TimerViewController: UIViewController {
         let minutes = t / 60
         let seconds = t % 60
         
+        var totalTime = 0
+        if isBreak {
+            totalTime = shortBreakDuration!
+        } else {
+            totalTime = workDuration!
+        }
+        
         timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
-        circularProgress.angle = Double((360 * t) / workDuration!)
+        circularProgress.angle = Double((360 * t) / totalTime)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
