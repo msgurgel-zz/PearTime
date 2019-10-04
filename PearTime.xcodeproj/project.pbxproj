@@ -16,7 +16,7 @@
 		1ED5986F23438B830035DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED5986E23438B830035DE07 /* Assets.xcassets */; };
 		1ED5987D23438B830035DE07 /* PearTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5987C23438B830035DE07 /* PearTimeTests.swift */; };
 		1ED5988823438B830035DE07 /* PearTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5988723438B830035DE07 /* PearTimeUITests.swift */; };
-		3F74A539234513A80026675D /* TimerSelectionControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */; };
+		3F74A539234513A80026675D /* TimerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74A538234513A80026675D /* TimerSelectionViewController.swift */; };
 		3F74A53B2345190A0026675D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F74A53A234519090026675D /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		1ED5988323438B830035DE07 /* PearTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PearTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED5988723438B830035DE07 /* PearTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PearTimeUITests.swift; sourceTree = "<group>"; };
 		1ED5988923438B830035DE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionControllerViewController.swift; sourceTree = "<group>"; };
+		3F74A538234513A80026675D /* TimerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionViewController.swift; sourceTree = "<group>"; };
 		3F74A53A234519090026675D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +87,7 @@
 			children = (
 				1E80024C2347C9BA005C079A /* SetupViewController.swift */,
 				3F74A53A234519090026675D /* PageViewController.swift */,
-				3F74A538234513A80026675D /* TimerSelectionControllerViewController.swift */,
+				3F74A538234513A80026675D /* TimerSelectionViewController.swift */,
 				1ED5986923438B820035DE07 /* MainViewController.swift */,
 				1EBBD51223452D760065A785 /* TimerViewController.swift */,
 			);
@@ -289,7 +289,7 @@
 				1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */,
 				3F74A53B2345190A0026675D /* PageViewController.swift in Sources */,
 				1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */,
-				3F74A539234513A80026675D /* TimerSelectionControllerViewController.swift in Sources */,
+				3F74A539234513A80026675D /* TimerSelectionViewController.swift in Sources */,
 				1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
 			);

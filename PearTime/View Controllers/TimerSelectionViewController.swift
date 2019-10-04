@@ -52,6 +52,7 @@ class TimerSelectionControllerViewController: UIViewController {
         {
             let tvc = segue.destination as? TimerViewController
             tvc?.workDuration = Int(periodOutlet.value) * 60
+            tvc?.shortBreakDuration = Int(shortBreakOutlet.value)*60
         }
     }
 }
