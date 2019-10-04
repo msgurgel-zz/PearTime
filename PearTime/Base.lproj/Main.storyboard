@@ -178,17 +178,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-gu-dZo">
-                                <rect key="frame" x="123" y="88" width="74" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-gu-dZo">
+                                <rect key="frame" x="109" y="88" width="102" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWF-jf-WSK">
+                                <rect key="frame" x="92.5" y="206" width="135.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iWF-jf-WSK" firstAttribute="centerX" secondItem="LE5-B5-x4w" secondAttribute="centerX" id="2Kv-sn-UvF"/>
                             <constraint firstItem="VLG-gu-dZo" firstAttribute="top" secondItem="ITb-bg-amK" secondAttribute="top" constant="68" id="5v1-Iv-Rlm"/>
                             <constraint firstItem="VLG-gu-dZo" firstAttribute="centerX" secondItem="LE5-B5-x4w" secondAttribute="centerX" id="hSq-dZ-Boh"/>
+                            <constraint firstItem="iWF-jf-WSK" firstAttribute="top" secondItem="VLG-gu-dZo" secondAttribute="bottom" constant="82" id="o3u-Yx-Iau"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ITb-bg-amK"/>
                     </view>
@@ -269,15 +277,23 @@
                                     <action selector="stop:" destination="PEw-XZ-ZUy" eventType="touchUpInside" id="6DE-mb-7Yc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-aT-0yH">
+                                <rect key="frame" x="139" y="345" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XCy-xS-FEh" firstAttribute="leading" secondItem="7j0-v0-Huh" secondAttribute="leading" constant="61" id="3Hi-Jw-Gec"/>
                             <constraint firstItem="HKX-3t-PmF" firstAttribute="leading" secondItem="7j0-v0-Huh" secondAttribute="leading" constant="138" id="86e-Tv-B00"/>
+                            <constraint firstItem="WaX-aT-0yH" firstAttribute="centerX" secondItem="66B-Tf-O6k" secondAttribute="centerX" id="CX6-Ow-20x"/>
                             <constraint firstItem="aeA-Ik-kiL" firstAttribute="leading" secondItem="OgV-v9-Vp0" secondAttribute="trailing" constant="58" id="I6O-fR-jlC"/>
                             <constraint firstItem="OgV-v9-Vp0" firstAttribute="leading" secondItem="7j0-v0-Huh" secondAttribute="leading" constant="101" id="LPv-8q-cpY"/>
                             <constraint firstItem="OgV-v9-Vp0" firstAttribute="baseline" secondItem="aeA-Ik-kiL" secondAttribute="baseline" id="PxG-XY-wD7"/>
                             <constraint firstItem="OgV-v9-Vp0" firstAttribute="top" secondItem="XCy-xS-FEh" secondAttribute="bottom" constant="23" id="R4v-7j-ujU"/>
+                            <constraint firstItem="WaX-aT-0yH" firstAttribute="top" secondItem="XCy-xS-FEh" secondAttribute="bottom" constant="131" id="WJM-5n-ZqU"/>
                             <constraint firstItem="HKX-3t-PmF" firstAttribute="top" secondItem="7j0-v0-Huh" secondAttribute="top" constant="93" id="ZTX-cY-Jq3"/>
                             <constraint firstItem="XCy-xS-FEh" firstAttribute="centerY" secondItem="HKX-3t-PmF" secondAttribute="centerY" id="dat-TP-UmB"/>
                             <constraint firstItem="XCy-xS-FEh" firstAttribute="top" secondItem="7j0-v0-Huh" secondAttribute="top" constant="13" id="opg-Z5-S8c"/>
@@ -286,6 +302,7 @@
                         <viewLayoutGuide key="safeArea" id="7j0-v0-Huh"/>
                     </view>
                     <connections>
+                        <outlet property="breakLabel" destination="WaX-aT-0yH" id="xPE-tI-8p5"/>
                         <outlet property="circularProgress" destination="XCy-xS-FEh" id="3Cp-Dg-9Hp"/>
                         <outlet property="startOutlet" destination="OgV-v9-Vp0" id="xe8-w2-gBi"/>
                         <outlet property="timerLabel" destination="HKX-3t-PmF" id="YFC-RW-b3K"/>
