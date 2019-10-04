@@ -9,29 +9,28 @@
 import UIKit
 
 class TimerSelectionControllerViewController: UIViewController {
-
+    
+    @IBOutlet weak var shortBreakLabel: UILabel!
+    
+    @IBOutlet weak var longBreakLabel: UILabel!
+    
+    @IBOutlet weak var workLabel: UILabel!
+    
+    @IBOutlet weak var shortBreakOutlet: UISlider!
+    
+    @IBOutlet weak var longBreakOutlet: UISlider!
+    
+    @IBOutlet weak var periodOutlet: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         shortBreakLabel.text=String(Int(shortBreakOutlet.value))
         longBreakLabel.text=String(Int(longBreakOutlet.value))
-        workPeriodLabel.text=String(Int(workPeriodOutlet.value))
         
+            workLabel.text=String(Int(periodOutlet.value))
     }
-    
-    @IBOutlet weak var shortBreakLabel: UILabel!
-    
-    @IBOutlet weak var longBreakLabel: UILabel!
-    
-    @IBOutlet weak var workPeriodLabel: UILabel!
-    
-    @IBOutlet weak var shortBreakOutlet: UISlider!
-    
-    @IBOutlet weak var longBreakOutlet: UISlider!
-    
-    @IBOutlet weak var workPeriodOutlet: UISlider!
-    
     
     @IBAction func shortBreakDuration(_ sender: UISlider) {
         shortBreakLabel.text=(String(Int(shortBreakOutlet
@@ -42,8 +41,8 @@ class TimerSelectionControllerViewController: UIViewController {
         longBreakLabel.text=(String(Int(longBreakOutlet
             .value)))
     }
-    @IBAction func workPeriodDuration(_ sender: UISlider) {
-        workPeriodLabel.text=(String(Int(workPeriodOutlet
-            .value)))
+
+    @IBAction func workDuration(_ sender: UISlider) {
+        workLabel.text = (String(Int(periodOutlet.value)))
     }
 }
