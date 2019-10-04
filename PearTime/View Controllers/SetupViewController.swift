@@ -1,10 +1,8 @@
-//
-//  SetupViewController.swift
-//  PearTime
-//
-//  Created by jamie tran on 2019-10-02.
-//  Copyright © 2019 Mateus Gurgel. All rights reserved.
-//
+// File        : SetupViewController.Swift
+// Project     : PearTime
+// Author      : Jamie Tran
+// Date        : October 4th, 2019
+// Description : Handles the logic of the Setup Page
 
 import UIKit
 
