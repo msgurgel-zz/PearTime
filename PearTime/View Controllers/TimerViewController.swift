@@ -46,10 +46,11 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: Any) {
-        stopTimer(workDuration!)
         isBreak = false
+        stopTimer(workDuration!)
         
         matchProgressColourToTimer()
+        updateBreakLabel()
         startOutlet.setTitle("Start", for: .normal)
     }
     
