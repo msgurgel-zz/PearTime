@@ -8,22 +8,27 @@
 
 import UIKit
 
+/* Function: SetupViewController
+ * Description: Viewcontroller for setup screen that will control how inturreptions
+ * and questions are laid out during the application
+ */
 class SetupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // declare tap gesture for dismissing keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
     }
     
-    //Calls this function when the tap is recognized.
+    /* Function: dismissKeyboard
+     * Input: void
+     * Output: void
+     * Description: dismiss keyboard
+     */
     @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
     
@@ -37,24 +42,22 @@ class SetupViewController: UIViewController {
     @IBOutlet weak var softInterruptionStepper: UIStepper!
     @IBOutlet weak var hardInterruptionStepper: UIStepper!
     
+    /* Function: softStepperValueChanged
+     * Input: _ sender: UIStepper
+     * Output: void
+     * Description: On stepper change, update text of soft interruption
+     */
     @IBAction func softStepperValueChanged(_ sender: UIStepper) {
         self.softInterruptionsLabel.text = String(Int(sender.value))
     }
+    
+    /* Function: hardStepperValueChanged
+     * Input: _ sender: UIStepper
+     * Output: void
+     * Description: On stepper change, update text of hard interruption
+     */
     @IBAction func hardStepperValueChanged(_ sender: UIStepper) {
         self.hardInterruptionsLabel.text = String(Int(sender.value))
     }
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
