@@ -32,17 +32,8 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var breakLabel: UILabel!
     @IBOutlet weak var startOutlet: UIButton!
 
-    
-    
     @IBAction func start(_ sender: Any) {
-        if isRunning {
-            pauseTimer()
-            startOutlet.setTitle("Start", for: .normal)
-        }
-        else {
-            startTimer()
-            startOutlet.setTitle("Pause", for: .normal)
-        }
+        toggleTimer()
     }
     
     @IBAction func stop(_ sender: Any) {
@@ -54,7 +45,24 @@ class TimerViewController: UIViewController {
         startOutlet.setTitle("Start", for: .normal)
     }
     
+    @IBAction func doubleTapTimer(_ gestureRecognizer: UITapGestureRecognizer) {
+        guard gestureRecognizer.view != nil else { return }
+        
+        if gestureRecognizer.state == .ended {
+            toggleTimer()
+        }
+    }
     
+    func toggleTimer() -> Void {
+        if isRunning {
+            pauseTimer()
+            startOutlet.setTitle("Start", for: .normal)
+        }
+        else {
+            startTimer()
+            startOutlet.setTitle("Pause", for: .normal)
+        }
+    }
     
     func startTimer() -> Void {
         isRunning = true

@@ -224,6 +224,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCy-xS-FEh" customClass="KDCircularProgress" customModule="PearTime" customModuleProvider="target">
                                 <rect key="frame" x="61" y="33" width="198" height="181"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="angle">
                                         <real key="value" value="360"/>
@@ -256,6 +257,9 @@
                                         <color key="value" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Kkb-GE-Nuk" appends="YES" id="EUZ-w7-a2F"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKX-3t-PmF">
                                 <rect key="frame" x="138" y="113" width="46" height="21"/>
@@ -309,6 +313,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lit-lL-iYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="Kkb-GE-Nuk">
+                    <connections>
+                        <action selector="doubleTapTimer:" destination="PEw-XZ-ZUy" id="xGV-4I-mFT"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2959" y="693"/>
         </scene>
