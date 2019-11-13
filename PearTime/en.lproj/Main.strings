@@ -1,0 +1,75 @@
+
+/* Class = "UILabel"; text = "2"; ObjectID = "1QR-eo-NSn"; */
+"1QR-eo-NSn.text" = "2";
+
+/* Class = "UILabel"; text = "Work Period Duration"; ObjectID = "38Y-PV-OWF"; */
+"38Y-PV-OWF.text" = "Work Period Duration";
+
+/* Class = "UILabel"; text = "Long Break Duration"; ObjectID = "4gr-S2-GTW"; */
+"4gr-S2-GTW.text" = "Long Break Duration";
+
+/* Class = "UILabel"; text = "Hard Interruptions"; ObjectID = "5ie-LG-Kvv"; */
+"5ie-LG-Kvv.text" = "Hard Interruptions";
+
+/* Class = "UILabel"; text = "25:00"; ObjectID = "HKX-3t-PmF"; */
+"HKX-3t-PmF.text" = "25:00";
+
+/* Class = "UIViewController"; title = "Setup"; ObjectID = "Kh4-xo-5Yr"; */
+"Kh4-xo-5Yr.title" = "Setup";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "OgV-v9-Vp0"; */
+"OgV-v9-Vp0.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "Q54-Fl-l4S"; */
+"Q54-Fl-l4S.text" = "4";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "RTC-3B-HZ8"; */
+"RTC-3B-HZ8.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Select Timer"; ObjectID = "V48-nu-Ajn"; */
+"V48-nu-Ajn.normalTitle" = "Select Timer";
+
+/* Class = "UILabel"; text = "Custom"; ObjectID = "VLG-gu-dZo"; */
+"VLG-gu-dZo.text" = "Custom";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WaX-aT-0yH"; */
+"WaX-aT-0yH.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "aeA-Ik-kiL"; */
+"aeA-Ik-kiL.normalTitle" = "Stop";
+
+/* Class = "UILabel"; text = "Pomodoro"; ObjectID = "b8w-YH-OIT"; */
+"b8w-YH-OIT.text" = "Pomodoro";
+
+/* Class = "UIButton"; normalTitle = "Setup"; ObjectID = "bMQ-nV-bwc"; */
+"bMQ-nV-bwc.normalTitle" = "Setup";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cBn-lh-YiJ"; */
+"cBn-lh-YiJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Short Break Duration"; ObjectID = "fgd-uZ-A3Y"; */
+"fgd-uZ-A3Y.text" = "Short Break Duration";
+
+/* Class = "UILabel"; text = "Coming Soon!"; ObjectID = "iWF-jf-WSK"; */
+"iWF-jf-WSK.text" = "Coming Soon!";
+
+/* Class = "UILabel"; text = "Pomodoro Reflection Questions"; ObjectID = "od4-ZL-GKm"; */
+"od4-ZL-GKm.text" = "Pomodoro Reflection Questions";
+
+/* Class = "UILabel"; text = "Change Defaults"; ObjectID = "qUv-hB-ADb"; */
+"qUv-hB-ADb.text" = "Change Defaults";
+
+/* Class = "UITextView"; text = "What went good about the sessions?\nWhat could be improved?                       What are the next steps?"; ObjectID = "rB3-GM-m5a"; */
+"rB3-GM-m5a.text" = "What went good about the sessions?\nWhat could be improved?                       What are the next steps?";
+
+/* Class = "UILabel"; text = "Number of Interruptions before exiting"; ObjectID = "rUo-H5-XJz"; */
+"rUo-H5-XJz.text" = "Number of Interruptions before exiting";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "vPa-kC-NiY"; */
+"vPa-kC-NiY.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "zCO-jW-oFI"; */
+"zCO-jW-oFI.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Soft Interruptions"; ObjectID = "zrZ-hI-kDD"; */
+"zrZ-hI-kDD.text" = "Soft Interruptions";
