@@ -30,10 +30,6 @@ class SetupViewController: UIViewController {
         view.endEditing(true)
     }
     
-    let questions = ["What went good about the sessions?",
-                     "What could be improved?",
-                     "What are the next steps?"]
-    
     @IBOutlet weak var softInterruptionsLabel: UILabel!
     @IBOutlet weak var hardInterruptionsLabel: UILabel!
     

@@ -447,10 +447,12 @@ What could be improved?                       What are the next steps?</string>
                         <viewLayoutGuide key="safeArea" id="fcp-2t-UPj"/>
                     </view>
                     <connections>
+                        <outlet property="TextViewQuestions" destination="rB3-GM-m5a" id="qXQ-gm-5cm"/>
                         <outlet property="hardInterruptionStepper" destination="EkQ-wt-f6P" id="1cO-qt-vc0"/>
                         <outlet property="hardInterruptionsLabel" destination="1QR-eo-NSn" id="ZW4-rY-eUq"/>
                         <outlet property="softInterruptionStepper" destination="hUS-7n-K6r" id="Wxf-Ny-81M"/>
                         <outlet property="softInterruptionsLabel" destination="Q54-Fl-l4S" id="2Nq-4q-epl"/>
+                        <outlet property="textViewQuestions" destination="V4E-KN-zXk" id="WNN-NF-LlO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCl-Fy-J26" userLabel="First Responder" sceneMemberID="firstResponder"/>
