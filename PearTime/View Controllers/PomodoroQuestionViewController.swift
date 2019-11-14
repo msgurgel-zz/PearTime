@@ -12,9 +12,9 @@ class PomodoroQuestionViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addQuestionTextField: UITextField!
     
-    var questions: [String] = ["What went good about the sessions?",
-                               "What could be improved?",
-                               "What are the next steps?"]
+    var questions: [String] = [NSLocalizedString("ReflectionQuestion_1", comment: ""),
+                               NSLocalizedString("ReflectionQuestion_2", comment: ""),
+                               NSLocalizedString("ReflectionQuestion_3", comment: "")]
     
     
     @IBAction func addButtonTapped(_ sender: Any) {

@@ -42,7 +42,7 @@ class TimerViewController: UIViewController {
         
         matchProgressColourToTimer()
         updateBreakLabel()
-        startOutlet.setTitle("Start", for: .normal)
+        startOutlet.setTitle(NSLocalizedString("StartMessage", comment: ""), for: .normal)
     }
     
     @IBAction func doubleTapTimer(_ gestureRecognizer: UITapGestureRecognizer) {
@@ -56,11 +56,11 @@ class TimerViewController: UIViewController {
     func toggleTimer() -> Void {
         if isRunning {
             pauseTimer()
-            startOutlet.setTitle("Start", for: .normal)
+            startOutlet.setTitle(NSLocalizedString("StartMessage", comment: ""), for: .normal)
         }
         else {
             startTimer()
-            startOutlet.setTitle("Pause", for: .normal)
+            startOutlet.setTitle(NSLocalizedString("PauseMessage", comment: ""), for: .normal)
         }
     }
     
@@ -102,7 +102,7 @@ class TimerViewController: UIViewController {
             if isBreak {
                 currentTime = workDuration!
                 updateTimer(timeInSec: currentTime)
-                startOutlet.setTitle("Start", for: .normal)
+                startOutlet.setTitle(NSLocalizedString("StartMessage", comment: ""), for: .normal)
                 
                 isBreak = false
             } else {
@@ -137,7 +137,7 @@ class TimerViewController: UIViewController {
     {
         if isBreak
         {
-            breakLabel.text = "Break Time!"
+            breakLabel.text = NSLocalizedString("BreakMessage", comment: "")
         }
         else
         {

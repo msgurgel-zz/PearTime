@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  PearTime
+
+  Created by Student on 2019-11-14.
+  Copyright © 2019 Mateus Gurgel. All rights reserved.
+*/
+
+"ReflectionQuestion_1" = "Co poszło dobrze w sesjach?";
+
+"ReflectionQuestion_2" = "Co można poprawić?";
+
+"ReflectionQuestion_3" = "Co teraz zrobisz?";
+
+"StartMessage" = "Początek";
+
+"PauseMessage" = "Pauza";
+
+"BreakMessage" = "Przerwa!";
