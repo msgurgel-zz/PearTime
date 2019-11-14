@@ -12,7 +12,7 @@ class PomodoroQuestionViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addQuestionTextField: UITextField!
     
-    var questions: [String] = [NSLocalizedString("ReflectionQuestion_1", comment: "Test"),
+    var questions: [String] = [NSLocalizedString("ReflectionQuestion_1", comment: ""),
                                NSLocalizedString("ReflectionQuestion_2", comment: ""),
                                NSLocalizedString("ReflectionQuestion_3", comment: "")]
     
