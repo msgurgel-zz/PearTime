@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12EFA1A6237CB6B100BF11D6 /* PomodoroQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFA1A5237CB6B100BF11D6 /* PomodoroQuestionViewController.swift */; };
+		12EFA1A8237CB8E800BF11D6 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFA1A7237CB8E800BF11D6 /* QuestionCell.swift */; };
 		1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80024C2347C9BA005C079A /* SetupViewController.swift */; };
 		1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD51223452D760065A785 /* TimerViewController.swift */; };
 		1EBBD516234533190065A785 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD515234533190065A785 /* KDCircularProgress.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12EFA1A5237CB6B100BF11D6 /* PomodoroQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroQuestionViewController.swift; sourceTree = "<group>"; };
+		12EFA1A7237CB8E800BF11D6 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		1E80024C2347C9BA005C079A /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		1EBBD51223452D760065A785 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		1EBBD515234533190065A785 /* KDCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				3F74A538234513A80026675D /* TimerSelectionViewController.swift */,
 				1ED5986923438B820035DE07 /* MainViewController.swift */,
 				1EBBD51223452D760065A785 /* TimerViewController.swift */,
+				12EFA1A5237CB6B100BF11D6 /* PomodoroQuestionViewController.swift */,
+				12EFA1A7237CB8E800BF11D6 /* QuestionCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -295,6 +301,8 @@
 				3F74A539234513A80026675D /* TimerSelectionViewController.swift in Sources */,
 				1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
+				12EFA1A6237CB6B100BF11D6 /* PomodoroQuestionViewController.swift in Sources */,
+				12EFA1A8237CB8E800BF11D6 /* QuestionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
