@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12EFA1A6237CB6B100BF11D6 /* PomodoroQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFA1A5237CB6B100BF11D6 /* PomodoroQuestionViewController.swift */; };
 		12EFA1A8237CB8E800BF11D6 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EFA1A7237CB8E800BF11D6 /* QuestionCell.swift */; };
+		12F09851239A04DD002759E4 /* QuestionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12E9804E2399C19E00AADF8B /* QuestionModel.xcdatamodeld */; };
 		1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E80024C2347C9BA005C079A /* SetupViewController.swift */; };
 		1EBBD51323452D760065A785 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD51223452D760065A785 /* TimerViewController.swift */; };
 		1EBBD516234533190065A785 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBBD515234533190065A785 /* KDCircularProgress.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E9804F2399C19E00AADF8B /* QuestionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionModel.xcdatamodel; sourceTree = "<group>"; };
 		12EFA1A5237CB6B100BF11D6 /* PomodoroQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroQuestionViewController.swift; sourceTree = "<group>"; };
 		12EFA1A7237CB8E800BF11D6 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		1E80024C2347C9BA005C079A /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12E9804D2399C18200AADF8B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				12E9804E2399C19E00AADF8B /* QuestionModel.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1EBBD51123452D130065A785 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		1ED5985B23438B820035DE07 = {
 			isa = PBXGroup;
 			children = (
+				12E9804D2399C18200AADF8B /* Data */,
 				1ED5986623438B820035DE07 /* PearTime */,
 				1ED5987B23438B830035DE07 /* PearTimeTests */,
 				1ED5988623438B830035DE07 /* PearTimeUITests */,
@@ -304,10 +315,10 @@
 				3F74A53B2345190A0026675D /* PageViewController.swift in Sources */,
 				1E80024D2347C9BA005C079A /* SetupViewController.swift in Sources */,
 				3F74A539234513A80026675D /* TimerSelectionViewController.swift in Sources */,
-				1ED5986A23438B820035DE07 /* MainViewController.swift in Sources */,
 				1ED5986823438B820035DE07 /* AppDelegate.swift in Sources */,
 				12EFA1A6237CB6B100BF11D6 /* PomodoroQuestionViewController.swift in Sources */,
 				12EFA1A8237CB8E800BF11D6 /* QuestionCell.swift in Sources */,
+				12F09851239A04DD002759E4 /* QuestionModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +657,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12E9804E2399C19E00AADF8B /* QuestionModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12E9804F2399C19E00AADF8B /* QuestionModel.xcdatamodel */,
+			);
+			currentVersion = 12E9804F2399C19E00AADF8B /* QuestionModel.xcdatamodel */;
+			path = QuestionModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1ED5985C23438B820035DE07 /* Project object */;
 }
